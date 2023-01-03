@@ -1,0 +1,78 @@
+main .wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px 10px;
+  display: grid;
+  gap: 4px;
+}
+main .title {
+  font-size: 1.8rem;
+  padding-top: 3px;
+  font-weight: bold;
+}
+label {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 25px;
+  margin: 18px 0;
+  font-size: 1.125rem;
+  cursor: pointer;
+  line-height: 1.4;
+  padding-left: 7px;
+}
+label:hover {
+  color: #00296b;
+}
+
+input[type="radio"] {
+  margin: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+  position: relative;
+  height: 12px;
+  width: 12px;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  outline: none;
+}
+input[type="radio"]:before {
+  height: 12px;
+  width: 12px;
+  content: "";
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  outline: 2px solid #d8d8d8;
+  outline-offset: 3px;
+}
+
+input[type="radio"]:checked::before {
+  background-color: #00296b;
+  outline: 2px solid #00296b;
+}
+
+.hidden-btn {
+  display: none;
+}
+
+.d {
+  border: 1px solid red;
+}
+
+button:disabled {
+  background-color: red;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 700px) {
+  main .title {
+    font-size: 1.3rem;
+  }
+  label {
+    font-size: 1rem;
+    margin: 12px 0;
+  }
+}

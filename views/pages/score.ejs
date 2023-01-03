@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/meta.ejs"); %>
+    <link href="/styles/globals/global.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/pages/score.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <%- include("../partials/header.ejs"); %>
+    <main>
+      <h1 class="title">Your financial wellness score</h1>
+      <div class="card">
+        <svg>
+          <circle cx="95" cy="95" r="80"></circle>
+          <circle cx="95" cy="95" r="80" style="--percent: 50"></circle>
+        </svg>
+        <h2>50%</h2>
+      </div>
+      <div class="action-wrapper">
+        <span>Get Detailed Report</span>
+        <a href="/email">
+          <svg
+            height="25"
+            width="25"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="white"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13 5l7 7-7 7M5 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </div>
+      <p>
+        Sign up to get detailed report on your mail. Detailed report will
+        contain question-wise analysyis and much more .
+      </p>
+    </main>
+  </body>
+</html>

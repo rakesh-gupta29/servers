@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/meta.ejs"); %>
+    <link href="/styles/globals/global.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/pages/emailForm.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <%- include("../partials/header.ejs"); %>
+    <main>
+      <form novalidate>
+        <h1>Submit your name and email to get your detailed report.</h1>
+        <label for="name">
+          Name
+          <input
+            required
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Name"
+        /></label>
+        <label for="email">
+          Email
+          <input
+            type="email"
+            required
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+        /></label>
+        <button type="submit" class="hvr-rectangle-out">Submit</button>
+      </form>
+      <small
+        >We will send the email and new schemes that we come up with. By
+        submitting this form , you agree to our
+        <a href="/terms" class="underline">terms of use</a> and
+        <a href="/privacy-policy" class="underline">privacy policy. </a>
+      </small>
+    </main>
+  </body>
+  <script src="/js/emailForm.js" defer></script>
+</html>

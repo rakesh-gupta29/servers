@@ -1,0 +1,11 @@
+import express from "express";
+import cors from "cors";
+import path from "path";
+const app = express();
+app.use(cors());
+let __dirname = path.resolve(path.dirname(""));
+app.use(express.static(__dirname + "/public"));
+app.set("view engine", "ejs");
+import formRouter from "./routes/home.js";
+app.use("/", formRouter);
+export default app;

@@ -1,0 +1,66 @@
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px 10px;
+  overflow: auto;
+}
+main h1 {
+  padding-bottom: 15px;
+}
+
+main .subtitle {
+  font-size: 1.125rem;
+}
+
+main .hero-img-wrapper {
+  height: 350px;
+  margin: 45px auto;
+  object-fit: contain;
+  padding: 10px;
+}
+main a {
+  background-color: #00296b;
+  min-height: 35px;
+  max-height: 35px;
+  max-width: 35px;
+  min-width: 35px;
+  padding: 3px;
+  border-radius: 50%;
+  animation: pulse 1s infinite alternate;
+  display: grid;
+  place-content: center;
+}
+
+.action-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  /* flex-wrap: nowrap; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 80px 30px 80px 10px;
+}
+.privacy {
+  text-align: left;
+  padding-right: 30px;
+  width: min(95%, 550px);
+}
+@keyframes pulse {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 0 0 0 5px rgba(0, 41, 107, 0.4),
+      0 0 0 10px rgba(0, 41, 107, 0.2);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .action-wrapper {
+    padding: 50px 30px 50px 0px;
+  }
+  main .action-wrapper {
+    font-size: 1.3rem;
+  }
+}
