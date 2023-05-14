@@ -1,0 +1,21 @@
+## Folder structures
+
+- docs: local docs and references.
+- draft: draft files
+- handlers: root for handlers
+- migrations: roots for DB migrations
+- pkg: external or standalone independent packages
+- models: DB collection models
+- third_pary: third party and vendor code
+- utils: standalone utility functions
+- web: website code for backend, if any.
+- static: static public assets
+- internal: private app code
+- middlewares: root for middlewares
+- test: root for tests
+- vendors: vendors code, generally for web
+- app: scaffolding the server
+- assets: non-client assets
+- router: root for routers
+- config: root of config
+- build: root for compiled files
